@@ -21,10 +21,11 @@ html {
 }
 
 body {
-    color: var(--color-body);
+    color: var(--color-background);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.17;
 }
+
 
 h1 {
     font-size: 3.4rem;
@@ -56,14 +57,17 @@ h2 {
 }
 
 .btn--stretched {
-    width: 100%;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 /* Links */
 a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -75,7 +79,6 @@ a {
 
 .card {
     padding: 2rem;
-    border: 1px solid red;
 }
 
 
@@ -85,7 +88,7 @@ a {
     font-size: 1.7rem;
     border-radius: 6px;
     border: 1px solid #dddfe2;
-    width: 330px;
+    width: 364px;
     outline: 0;
 }
 
@@ -104,6 +107,110 @@ a {
     caret-color: #1b74e4
 }
 
-.input--stretched {
-    width: 100%;
+
+/* Brand */
+.brand {
+    margin: 0 auto;
+    text-align: center;
+    width: 40rem;
 }
+
+.brand__img {
+    padding: 0 0 20px 0;    
+}
+
+.brand__img__logo {
+    height: 10.6rem;
+    margin: -2.8rem;
+}
+
+.brand__heading {
+    font-weight: normal;
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .brand {
+        text-align: left;
+    }
+    .brand__heading {
+        font-size: 2.8rem;
+    }
+}
+
+/* Log in group */
+.login {
+    width: 396px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.102), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 1rem 0 2.4rem ;
+    margin: 4rem 0 0;
+    border-radius: .8rem;
+}
+
+.login__group {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.login__group__inputs {
+    max-width: 100%  
+}
+
+.login__group__input {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    padding: .6rem 0;
+    width: 36.4rem;
+}
+
+.login__group__btn {
+    width: 39.6rem;
+    padding-top: 0.6rem;
+    margin: 0 auto;
+
+}
+
+.login__group__btn .btn {
+    width: 36rem;
+    display: inline-block;
+}
+
+.login__group__btn button:hover {
+    transform: scale(.99);
+}
+
+.login__group__link {
+    margin-top: 1.6rem;
+}
+
+.login__group__link > a {
+    color: #1877f2;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.login__group__border {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #dadde1;
+    margin: 2rem 1.6rem;
+    line-height: 1.34;
+}
+
+.login__group__btn > a.btn {
+    width: auto;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.login__group__btn > a.btn:hover {
+    background-color: #32a51b;
+}
+
+
