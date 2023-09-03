@@ -1,7 +1,7 @@
 /* Color Palette */
 :root {
     --color-primary: #3975ea;
-    --color-accent: #65b543;
+    --color-accent: #42b72a;
     --color-body: #1c1e21;
     --color-background: #f0f2f5;
     --color-backgroundForm: #fff;
@@ -36,11 +36,44 @@ h2 {
 
 /* Button */
 .btn {
-    padding: 1.6rem 1rem;
+    padding: 1.6rem 1.7rem;
     font-size: 1.7rem;
-    
+    border-radius: 6px;
+    border: 0;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 .btn--accent {
     background-color: var(--color-accent);
+    color: #fff;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.btn--stretched {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+
+/* Container */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 2rem;
+    border: 1px solid red;
 }
