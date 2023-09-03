@@ -79,8 +79,17 @@ a:hover {
 }
 
 .card {
-    padding: 2rem;
+    padding: 2rem 0 16.4rem;
 }
+
+@media screen and (min-width: 900px) {  
+
+    .card {
+        padding: 7.2rem 0 11.2rem;
+    }
+}
+
+
 
 
 /* Input */
@@ -112,8 +121,9 @@ a:hover {
 /* Brand */
 .brand {
     margin: 0 auto;
-    text-align: center;
     width: 40rem;
+    text-align: center;
+    padding-right: 3.2rem;
 }
 
 .brand__img {
@@ -126,15 +136,29 @@ a:hover {
 }
 
 .brand__heading {
+    font-size: 2.4rem ;
     font-weight: normal;
     margin: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 900px) {
+    .brand__img {
+        padding: 11.2rem 0 1.6rem;
+    }
+
     .brand {
         text-align: left;
     }
+}
+
+@media screen and (min-width: 1075px ) {
+
+    .brand {
+        width: 58rem;
+    }
+
     .brand__heading {
+        margin-right: 4rem;
         font-size: 2.8rem;
     }
 }
@@ -146,6 +170,7 @@ a:hover {
     padding: 1rem 0 2.4rem ;
     margin: 4rem 0 0;
     border-radius: .8rem;
+    background-color: #fff;
 }
 
 .login__group {
@@ -191,8 +216,7 @@ a:hover {
     color: #1877f2;
     font-size: 1.4rem;
     font-weight: 500;
-    cursor: pointer;
-    
+    line-height: 1.34
 }
 
 .login__group__border {
@@ -220,9 +244,51 @@ a:hover {
     font-size: 1.4rem;
     font-weight: normal;
     margin-top: 2.8rem;
+    text-align: center;
 }
 
 .create-page__link {
     font-weight: 600;
     color: var(--color-body);
+}
+
+/* Block */
+.block {
+    height: 45.6rem;
+    width: 39.6rem;
+}
+
+/* Content */
+.content {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 98rem;
+}
+
+
+@media screen and (min-width: 900px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+    .content .brand__img, .brand{
+        margin: 0;
+    }
+
+    .content .brand__img {
+        align-self: start;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+     .content {
+        margin: 0 4rem;
+        width: auto;
+    }
+
 }
