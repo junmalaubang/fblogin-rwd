@@ -144,10 +144,6 @@ a:hover {
         text-align: left;
          padding-right: 3.2rem;
     }
-
-    .brand__heading {
-        line-height: 3.2rem;
-    }
 }
 
 @media screen and (min-width: 1075px ) {
@@ -352,6 +348,7 @@ a:hover {
     padding-left: 2rem;
     line-height: 19.2px;
 }
+
 
 
 .pagefooter  li > a,
